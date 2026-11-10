@@ -10,7 +10,7 @@ import { IoSearchOutline } from "react-icons/io5";
 
 function Header() {
   return (
-    <div className="fixed top-0 right-0 left-0 z-1 bg-white border-t border-gray-400">
+    <div className="fixed top-0 right-0 left-0 z-1 bg-white border-t border-gray-300">
       <div className="flex items-center justify-between px-2.5 py-2.5 md:px-12.5 lg:px-17.5 xl:px-25">
         <Menu />
         <div className="flex-1 md:ml-0 md:flex-none">

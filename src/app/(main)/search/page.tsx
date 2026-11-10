@@ -1,9 +1,10 @@
 import ProductItem from "@/src/app/(main)/_components/ProductItem";
-import SearchEmpty from "@/src/app/search/SearchEmpty";
+
 import { Separator } from "@/src/components/ui/separator";
 import { searchProducts } from "@/src/lib/searchProducts";
 import { getProducts } from "@/src/services/productService";
 import { Metadata } from "next";
+import SearchEmpty from "./SearchEmpty";
 
 type Props = {
   searchParams: Promise<{ keyword?: string }>;

@@ -11,7 +11,6 @@ import {
 } from "@/src/components/ui/field";
 import { Input } from "@/src/components/ui/input";
 import Image from "next/image";
-import Logo from "@/src/app/apple-icon.png";
 
 export function LoginForm({
   className,
@@ -22,13 +21,13 @@ export function LoginForm({
       <Card className="overflow-hidden p-0">
         <CardContent className="grid p-0 md:grid-cols-2">
           <div className="bg-muted relative hidden md:block">
-            <Image
+            {/* <Image
               src={Logo}
               alt="Image"
               width={400}
               height={400}
               className="size-full"
-            />
+            /> */}
           </div>
           <form className="p-6 md:p-8">
             <FieldGroup>

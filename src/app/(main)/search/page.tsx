@@ -1,4 +1,4 @@
-import ProductItem from "@/src/app/_components/ProductItem";
+import ProductItem from "@/src/app/(main)/_components/ProductItem";
 import SearchEmpty from "@/src/app/search/SearchEmpty";
 import { Separator } from "@/src/components/ui/separator";
 import { searchProducts } from "@/src/lib/searchProducts";

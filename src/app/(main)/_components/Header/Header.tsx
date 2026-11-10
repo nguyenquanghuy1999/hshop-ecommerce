@@ -1,0 +1,63 @@
+import Link from "next/link";
+import { Suspense } from "react";
+import { IconUser } from "../icons/IconUser";
+import Cart from "./Cart";
+import Hotline from "./Hotline";
+import Menu from "./Menu";
+import Nav from "./Nav";
+import { Search } from "./Search";
+import { IoSearchOutline } from "react-icons/io5";
+
+function Header() {
+  return (
+    <div className="fixed top-0 right-0 left-0 z-1 bg-white">
+      <div className="flex items-center justify-between px-2.5 py-2.5 md:px-12.5 lg:px-17.5 xl:px-25">
+        <Menu />
+        <div className="flex-1 md:ml-0 md:flex-none">
+          <Link href="/">
+            <div className="text-center">
+              <span className="text-primary text-[40px] font-bold">H</span>
+              <span className="text-[30px] font-medium">Shop</span>
+            </div>
+          </Link>
+        </div>
+        <Suspense
+          fallback={
+            <div className="border-primary flex h-10 items-center rounded-[5px] md:w-84.5 md:border">
+              <div className="m-auto flex-1 items-center">
+                <div className="text-md hidden size-full px-2.5 md:block">
+                  <input
+                    type="text"
+                    placeholder="Tìm kiếm..."
+                    className="size-full outline-none"
+                  />
+                </div>
+              </div>
+              <button className="text-primary md:text-foreground hover:bg-primary flex h-full w-10.75 items-center justify-center text-[30px] transition duration-300 ease-in-out hover:cursor-pointer hover:text-white md:text-[23px]">
+                <IoSearchOutline />
+              </button>
+            </div>
+          }
+        >
+          <Search />
+        </Suspense>
+        <Hotline />
+        <div className="hidden items-center justify-center md:flex">
+          <IconUser className="fill-primary size-7.5 lg:size-8.75" />
+          <div className="ml-1.5 hidden flex-col lg:flex">
+            <span className="text-sm">Tài khoản</span>
+            <Link href={"/login"}>
+              <span className="text-primary text-sm font-bold hover:cursor-pointer">
+                Đăng nhập
+              </span>
+            </Link>
+          </div>
+        </div>
+
+        <Cart />
+      </div>
+      <Nav />
+    </div>
+  );
+}
+export default Header;

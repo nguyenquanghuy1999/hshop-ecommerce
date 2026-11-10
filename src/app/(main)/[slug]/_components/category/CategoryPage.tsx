@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import CategoryBreadcrumb from "../../../_components/Breadcrumb";
 import ProductFilter from "./ProductFilter";
 
-import ProductItem from "@/src/app/_components/ProductItem";
+import ProductItem from "@/src/app/(main)/_components/ProductItem";
 import CategoryPagination from "./CategoyPagination";
 import ProductSort from "./ProductSort";
 

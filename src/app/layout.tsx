@@ -31,6 +31,11 @@ export const metadata: Metadata = {
     statusBarStyle: "default",
     title: "HShop",
   },
+  icons: {
+    apple: [
+      { url: "/icons/apple-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
 };
 
 export const viewport: Viewport = {

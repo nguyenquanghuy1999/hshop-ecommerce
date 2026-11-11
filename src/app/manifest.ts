@@ -8,5 +8,13 @@ export default function manifest(): MetadataRoute.Manifest {
     display: "standalone",
     background_color: "white",
     theme_color: "white",
+    icons: [
+      {
+        src: "/icons/apple-icon.png",
+        sizes: "180x180",
+        type: "image/png",
+        purpose: "any",
+      },
+    ],
   };
 }

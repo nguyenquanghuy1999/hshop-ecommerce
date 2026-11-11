@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import Header from "./_components/Header";
-import "./../globals.css"
+import "./../globals.css";
 import { Toaster } from "../../components/ui/toast";
 import Footer from "./_components/Footer";
 
@@ -30,6 +30,11 @@ export const metadata: Metadata = {
     capable: true,
     statusBarStyle: "default",
     title: "HShop",
+  },
+  icons: {
+    apple: [
+      { url: "/icons/apple-icon.png", sizes: "180x180", type: "image/png" },
+    ],
   },
 };
 

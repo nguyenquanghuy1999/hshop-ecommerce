@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { IoMdClose } from "react-icons/io";
 import { TiArrowBackOutline } from "react-icons/ti";
-import Price from "../_components/Price";
+import Price from "../../../components/shared/Price";
 import QuantitySelector from "../_components/QuantitySelector";
 import { useEffect, useState } from "react";
 

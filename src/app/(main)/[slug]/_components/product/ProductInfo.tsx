@@ -4,7 +4,7 @@ import { toast } from "@/src/components/ui/toast";
 import { useCartStore } from "@/src/stores/useCartStore";
 import { Product } from "@/src/types";
 import Image from "next/image";
-import Price from "../../../_components/Price";
+import Price from "../../../../../components/shared/Price";
 import QuantitySelector from "../../../_components/QuantitySelector";
 import { useRouter } from "next/navigation";
 import { useState } from "react";

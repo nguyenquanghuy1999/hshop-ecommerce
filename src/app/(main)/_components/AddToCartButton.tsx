@@ -2,7 +2,7 @@
 import { Button } from "@/src/components/ui/button";
 import { useCartStore } from "@/src/stores/useCartStore";
 import { Product } from "@/src/types";
-import { IconCart } from "./icons/IconCart";
+import { IconCart } from "../../../components/shared/icons/IconCart";
 import { toast } from "@/src/components/ui/toast";
 
 export default function AddToCartButton({ product }: { product: Product }) {

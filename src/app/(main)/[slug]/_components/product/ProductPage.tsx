@@ -1,4 +1,4 @@
-import Breadcrumb from "@/src/app/_components/Breadcrumb";
+import Breadcrumb from "@/src/app/(main)/_components/Breadcrumb";
 import ProductInfo from "./ProductInfo";
 import PolicyList from "./PolicyList";
 import ProductDescription from "./ProductDescription";

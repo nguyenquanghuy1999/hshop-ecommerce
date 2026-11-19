@@ -2,7 +2,7 @@ import { Product } from "@/src/types/";
 import Image from "next/image";
 import Link from "next/link";
 import AddToCartButton from "./AddToCartButton";
-import Price from "./Price";
+import Price from "../../../components/shared/Price";
 import { cn } from "@/src/lib/utils";
 
 export default function ProductItem({

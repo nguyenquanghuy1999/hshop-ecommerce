@@ -1,4 +1,4 @@
-import { categorySections } from "../config";
+import { categorySections } from "@/src/config";
 import CategoryNav from "./_components/CategoryNav";
 import CategorySection from "./_components/CategorySection";
 import HeroCarousel from "./_components/HeroCarousel";

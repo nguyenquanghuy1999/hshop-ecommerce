@@ -23,6 +23,7 @@ import { RiMenu2Fill } from "react-icons/ri";
 import Hotline from "../Hotline";
 import { Category } from "@/src/types";
 import CategoryList from "../CategoryList";
+import Link from "next/link";
 
 const icons = [
   AiOutlineHome,
@@ -86,9 +87,11 @@ export default function MenuWrapper({
                   </li>
                 );
               })}
-              <li className="border-primary-light flex items-center border-t py-4">
-                <LuCircleUserRound />
-                <span className="pl-2">Đăng nhập</span>
+              <li className="border-primary-light border-t py-4">
+                <Link href="/login" className="flex items-center">
+                  <LuCircleUserRound />
+                  <span className="pl-2">Đăng nhập</span>
+                </Link>
               </li>
             </ul>
             <Hotline isMenu className="mt-13" />

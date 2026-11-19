@@ -28,7 +28,7 @@ function Header({ variant = "full" }: HeaderProps) {
   return (
     <div
       className={cn(
-        "fixed top-0 right-0 left-0 z-1 border-t border-gray-300 bg-white",
+        "fixed top-0 right-0 left-0 z-1 bg-white",
         variant === "auth" && "relative",
       )}
     >
